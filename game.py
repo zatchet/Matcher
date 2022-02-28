@@ -2,7 +2,7 @@ import tkinter as tk
 import random
 
 root = tk.Tk()
-root.title('Happy Birthday babe')
+root.title('Happy Birthday!')
 root.geometry("1000x1200")
 
 myLabel = tk.Label(root, text = ' ')
@@ -81,7 +81,7 @@ def button_click(b, n):
             if winner == 8:
                 win()
         else:
-            myLabel.config(text='u suck homo')
+            myLabel.config(text='wrong')
             #time.sleep(1)
             count = 0
             answer_list = []
@@ -119,8 +119,8 @@ root.config(menu=my_Menu)
 
 option_menu = tk.Menu(my_Menu, tearoff=False)
 my_Menu.add_cascade(label = "options", menu = option_menu)
-option_menu.add_command(label = "reset game (this is fun zach)", command = reset)
-option_menu.add_command(label = "quit (i suck)", command = root.quit)
+option_menu.add_command(label = "reset", command = reset)
+option_menu.add_command(label = "quit", command = root.quit)
 
 # grid
 b0.grid(row=0,column=0)
